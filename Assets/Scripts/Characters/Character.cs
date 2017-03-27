@@ -22,9 +22,9 @@ namespace Characters
 
         private void Start()
         {
-            tilesmap = new float[10, 10];
+            tilesmap = new float[8, 8];
             filltilesmap();
-            grid = new PathFind.Grid(10, 10, tilesmap);
+            grid = new PathFind.Grid(8, 8, tilesmap);
         }
 
         public void MoveTo(Vector2 tile)
@@ -51,9 +51,9 @@ namespace Characters
 
         void filltilesmap()
         {
-            for (int i = 0; i >= 10; i++)
+            for (int i = 0; i >= 8; i++)
             {
-                for (int j = 0; j >= 10; j++)
+                for (int j = 0; j >= 8; j++)
                 {
                     tilesmap[i, j] = 1;
                 }
